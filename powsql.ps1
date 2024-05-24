@@ -1,7 +1,7 @@
 # Based on this code: https://learn.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-hive-query-odbc-driver-powershell
 
 # Connect to database
-if ($args != 2) {
+if ($args.Count -ne 2) {
   Write-Output "Usage: powsql.ps1 <connection string, including username and password> <query>"
   Exit 1  
 }
